@@ -1,0 +1,3 @@
+﻿dotnet tool install -g dotnet-ef
+
+dotnet ef dbcontext scaffold "Server=localhost\SQLEXPRESS;Initial Catalog=BDDTest;Persist Security Info=False;User ID=**;Password=**;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=True;Connection Timeout=30;" Microsoft.EntityFrameworkCore.SqlServer --use-database-names --no-pluralize --no-onconfiguring --output-dir Entities --context-dir Context --force --schema dbo --context BookingContext
